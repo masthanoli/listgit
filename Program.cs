@@ -127,6 +127,7 @@ namespace listgit
                         else
                         {
                             folders.Add(args[0]);
+                            GetDirectories(args[0], s => folders.Add(s));
                         }
                         foreach (var folder in folders)
                         {
